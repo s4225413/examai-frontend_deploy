@@ -1,0 +1,14 @@
+.instructions-page { max-width: 720px; margin: 0 auto; }
+.instructions-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-lg); }
+.instructions-card h1 { font-size: var(--font-2xl); font-weight: 700; margin-bottom: 8px; }
+.instructions-card .subtitle { color: var(--text-secondary); font-size: var(--font-sm); margin-bottom: 32px; }
+.instructions-section { margin-bottom: 28px; }
+.instructions-section h3 { font-size: var(--font-base); font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.instructions-list li { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: var(--font-sm); color: var(--text-secondary); line-height: 1.6; }
+.instructions-list li::before { content: '•'; color: var(--primary-400); font-weight: 700; font-size: 1.2rem; flex-shrink: 0; }
+.instructions-requirements { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.requirement-item { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-size: var(--font-sm); }
+.requirement-item.met { border-color: var(--success-400); background: #f0fdf4; }
+.requirement-item.unmet { border-color: var(--warning-400); background: #fffbeb; }
+.instructions-actions { display: flex; gap: 12px; margin-top: 32px; }
+.instructions-actions .btn { flex: 1; justify-content: center; padding: 16px; }

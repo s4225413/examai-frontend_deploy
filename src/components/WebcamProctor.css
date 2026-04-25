@@ -1,0 +1,12 @@
+.webcam-proctor { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: #000; }
+.webcam-video { width: 100%; display: block; }
+.webcam-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
+.webcam-face-box { position: absolute; border: 2px solid var(--success-400); border-radius: 4px; }
+.webcam-face-box.warning { border-color: var(--warning-400); }
+.webcam-face-box.danger { border-color: var(--error-400); }
+.webcam-status { position: absolute; top: 12px; left: 12px; display: flex; align-items: center; gap: 8px; padding: 6px 12px; background: rgba(0,0,0,0.7); border-radius: var(--radius-full); color: #fff; font-size: var(--font-xs); font-weight: 600; backdrop-filter: blur(4px); }
+.webcam-status-dot { width: 8px; height: 8px; border-radius: 50%; animation: pulse 2s infinite; }
+.webcam-status-dot.active { background: var(--success-400); }
+.webcam-status-dot.warning { background: var(--warning-400); }
+.webcam-status-dot.error { background: var(--error-400); }
+.webcam-alert { position: absolute; bottom: 12px; left: 12px; right: 12px; padding: 10px 14px; background: rgba(239,68,68,0.9); color: #fff; border-radius: var(--radius-md); font-size: var(--font-sm); font-weight: 500; text-align: center; backdrop-filter: blur(4px); animation: fadeIn 0.3s ease; }
